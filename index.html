@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patna Room Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Patna Room Finder</h1>
+    <p>पटना में अपना पसंदीदा कमरा खोजें</p>
+  </header>
+     <section class="admin-panel" id="owner-login">
+  <h2>Owner Login</h2>
+  <p>केवल Vicky Kumar के लिए</p>
+
+  <form id="login-form">
+    <input
+      type="password"
+      id="owner-pin"
+      placeholder="अपना PIN डालें"
+      required
+    >
+    <button type="submit">Login करें</button>
+  </form>
+
+  <p id="login-message"></p>
+</section>
+  <section class="profile">
+    <img src=myphoto.jpg" Vicky Kumar">
+    <h2>Vicky Kumar</h2>
+    <p>Room Service, Patna</p>
+    <p>मोबाइल: 9204197497</p>
+  </section>
+        <section class="admin-panel">
+            <section class="admin-panel" id="owner-dashboard" hidden></section>
+  <h2>Owner Dashboard</h2>
+  <p>Welcome Vicky Kumar</p>
+
+  <h3>नया कमरा पोस्ट करें</h3>
+
+  <form id="room-form">
+    <input type="text" id="location"
+      placeholder="कमरे का पता" required>
+
+    <input type="number" id="rent"
+      placeholder="मासिक किराया" required>
+
+    <select id="room-type" required>
+      <option value="">कमरे का प्रकार चुनें</option>
+      <option>Single Room</option>
+      <option>Double Room</option>
+      <option>Family Room</option>
+    </select>
+
+    <input type="file" id="room-photo"
+      accept="image/*" required>
+
+    <button type="submit">कमरा पोस्ट करें</button>
+  </form>
+</section>
+  <main>
+    <h2>Available Rooms</h2>
+    <div id="room-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

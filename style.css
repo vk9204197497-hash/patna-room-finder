@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #222;
+}
+
+header {
+  background: #123b68;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  background: white;
+  text-align: center;
+  margin: 25px auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px #ccc;
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #123b68;
+}
+
+.profile h2 {
+  margin: 12px;
+  color: #123b68;
+}
+
+.profile p {
+  margin: 8px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main h2 {
+  color: #123b68;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 25px;
+  }
+}
+.admin-panel {
+  background: white;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #ccc;
+}
+
+.admin-panel h2 {
+  color: #123b68;
+  margin-bottom: 12px;
+}
+
+.admin-panel h3 {
+  margin: 20px 0;
+  color: #16834a;
+}
+
+#room-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#room-form input,
+#room-form select {
+  padding: 13px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#room-form button {
+  background: #16834a;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#room-form button:hover {
+  background: #105f35;
+}
+
+#room-list .profile {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+#room-list .profile:hover {
+  transform: translateY(-4px);
+}
